@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:inline": "npm run build && webpack build",
+    "webpack:dev": "webpack serve --open",
+    "webpack:build": "webpack build"
   },
   "dependencies": {
     "next": "13.5.4",
@@ -18,6 +21,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "css-loader": "^6.8.1",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "html-bundler-webpack-plugin": "^2.14.4",
