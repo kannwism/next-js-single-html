@@ -14,6 +14,20 @@ pnpm dev
 bun dev
 ```
 
+Second, inline all used assets into HTML:
+
+```bash
+# inline assets and open preview in browser
+npm run webpack:dev
+# inline assets and save to output directory
+npm run webpack:build
+```
+
+Or you can build and inline with one command:
+```bash
+npm run build:inline
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
